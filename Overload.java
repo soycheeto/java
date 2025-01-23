@@ -1,6 +1,4 @@
 class Overload{
-	public static void main(String[] args){
-	    
 	public void print(int a){
 		System.out.println(a);
 	}
@@ -9,6 +7,7 @@ class Overload{
 		System.out.println(a);
 		System.out.println(b);
 	}
+	public static void main(String args[]){
 		Overload o = new Overload();
 		o.print(10);
 		o.print(10,20);
