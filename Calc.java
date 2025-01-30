@@ -1,11 +1,5 @@
 import java.util.Scanner;
 class Calc{
-    public int numInput(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number: ");
-        int num = sc.nextInt();
-        return num;
-    }
 
     public String operatorInput(){
         Scanner sc = new Scanner(System.in);
@@ -16,8 +10,11 @@ class Calc{
 
     public static void main(String[] args){
         Calc obj = new Calc();
-        int num1 = obj.numInput();
-        int num2 = obj.numInput();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int num1 =  sc.nextInt();
+        System.out.println("Enter the second number: ");
+        int num2 =  sc.nextInt();
         String operator = obj.operatorInput();
         int result = 0;
         switch(operator){
