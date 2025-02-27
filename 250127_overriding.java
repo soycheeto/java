@@ -9,7 +9,7 @@ class A{
 class B extends A{
     @ Override
     public void start(){
-        System.out.print("Ride")
+        System.out.print("Ride");
     }
 }
 
